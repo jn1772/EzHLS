@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
     video_file_name = "video_out.mp4"
     audio_file_name = "audio_out.aac"
-    target_file_name = "{}.mp4".format(episodeId)
+    target_file_name = "{}.mp4".format(final_file_name)
 
     video_out_absolute_location = "{}/{}".format(content_location, video_file_name)
     audio_out_absolute_location = "{}/{}".format(content_location, audio_file_name)

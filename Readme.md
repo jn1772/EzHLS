@@ -1,4 +1,4 @@
-#### EzHLS is a Simple and Quick command line based interactive utility written in python to get single media file out of a HLS m3u8 master playlist file link.
+#### EzHLS is a Simple and Quick command line based interactive utility written in python to convert an HLS m3u8 master playlist link to a downloaded media file on disk (merged audio,video).
 
 >**What does it do?**
 
