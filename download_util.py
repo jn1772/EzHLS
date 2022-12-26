@@ -24,6 +24,7 @@ def download(uri, disk_location):
                     f.write(request.read())
                 except Exception as e:
                     print("Error writing chunk {} to disk. {}\n".format(uri, e))
+                    continue
             update_progress_increase_by_one()
         except Exception as e:
             print(
@@ -32,7 +33,7 @@ def download(uri, disk_location):
         break
 
 
-def download_parallel(uris, disk_location, thread_count=16):
+def download_parallel(uris, disk_location, thread_count=6):
     args = []
     for i in range(0, len(uris)):
         args.append((uris[i], disk_location[i]))
